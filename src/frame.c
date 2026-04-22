@@ -5,5 +5,5 @@
 int main() {
     struct termios terminal;
     tcgetattr(STDIN_FILENO,&terminal);
-    terminal.c_lflag &= ~(ECHO|ISIG|IEXTEN)
+    terminal.c_lflag &= ~(ECHO|ISIG|IEXTEN);
 }
